@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ <head>
+ <meta charset ="utf-8">
+	<title>signin</title>
+	<link href="sign.css" type="text/css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+ </head>
+ <body>
+  <div class="sup">
+		<form name="myForm" method="post" onsubmit="return validate()">
+			<h2 style="color : #fff;"> Sign Up</h2>
+			<input type="text" name="username" placeholder="First name"><br><br>
+			<input type="text" name="username" placeholder="Last name"><br><br>
+			<input type="password" name="pass" placeholder="Confirm Password"><br><br>
+			<input type="text" name="email" placeholder="E-mail address"><br><br>
+			<input type="submit" value="Sign up" ><br><br>
+		</form>
+    <script>
+      function validate() {
+      
+         if(document.myForm.username.value == ""){
+            alert( "Please provide your name!" );
+            document.myForm.username.focus() ;
+            return false;
+         }
+         if(document.myForm.pass.value == ""){
+            alert( "Please provide your Password!" );
+            document.myForm.pass.focus() ;
+            return false;
+         }
+		 if(document.myForm.email.value == ""){
+            alert( "Please provide your Email!" );
+            document.myForm.pass.focus() ;
+            return false;
+         }
+		
+		 }
+    </script>
+		Already have account?<a href="form.html" style="text-decoration: none;
+		font-family: 'Flamenco', cursive;
+		color:yellow;">&nbsp;Log In</a>
+
+  </div>
+ </body>
+</html>

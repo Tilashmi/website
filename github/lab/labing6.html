@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Practice</title>
+	<link href="form.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form action="/my-handling-form-page" method="post">
+<div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name" required>
+  </div>
+  <div>
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="user_mail">
+  </div>
+  <div>
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </div>
+   <div class="button">
+  <button type="submit">Send your message</button>
+</div>
+</form>
+<form class="no-widget">
+  <select name="myFruit">
+      <option>Cherry</option>
+      <option>Lemon</option>
+      <option>Banana</option>
+      <option>Strawberry</option>
+      <option>Apple</option>
+  </select>
+  <div class="select">
+    <span class="value">Cherry</span>
+    <ul class="optList hidden">
+      <li class="option">Cherry</li>
+      <li class="option">Lemon</li>
+      <li class="option">Banana</li>
+      <li class="option">Strawberry</li>
+      <li class="option">Apple</li>
+    </ul>
+  </div>
+</form>
+</body>
+</html>

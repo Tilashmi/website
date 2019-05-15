@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ <head>
+  <meta charset="utf-8">
+	<title>Places to go</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="gallery.css" type="text/css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ <body>
+	<header>
+		<nav>
+			<div class="bar clearfix">
+				<img src="eyes.svg"  alt="logo of budhha eyes" class="logo">
+				<h2> Travelling eyes</h2>
+				<ul class="main-nav animated bounceInDown" id="check">
+					<li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">PLACES TO GO</a></li>
+                    <li><a href="todo.html">THINGS TO DO</a></li>
+                    <li><a href="form.html">LOGIN</a></li>
+	                <li><a href="plan.html">PLAN YOUR TRIP</a></li>
+	             </ul>
+	             <a href="#" class="icon"  onclick= "slideshow()"><i class="fa fa-bars"></i></a>
+			</div>
+		</nav>
+   <h1 style="text-align:center;">Popular destinations</h1>
+   <div class="responsive">
+    <a href="images/b1.jpg" target="_blank"><img src="images/b1.jpg"  alt="image of Annapurna trek" width="300" height="200"></a>
+    <a href="images/mustang1.jpg" target="_blank"><img src="images/mustang1.jpg" alt="image of Mustang" width="300" height="200"></a>
+    <a href="images/bardiya2.jpg" target="_blank"><img src="images/bardiya2.jpg" alt="image of Bardiya" width="300" height="200"></a>
+    <a href="images/Lumbini.jpg" target="_blank"><img src="images/Lumbini.jpg" alt="image of Lumbini" width="300" height="200"></a>
+    <a href="images/trekking.jpg" target="_blank"><img src="images/trekking.jpg" alt="image of Everest base camp" width="300" height="200"></a>
+	<a href="images/ch1.jpg" target="_blank"><img src="images/ch1.jpg" alt="image of Chitwan" width="300" height="200"></a>
+	<a href="images/pokhara3.jpg" target="_blank"><img src="images/pokhara3.jpg" alt="image of Pokhara" width="300" height="200"></a>
+    <a href="images/TN3.jpg" target="_blank"><img src="images/TN3.jpg" alt="image of Patan dubar" width="300" height="200"></a>
+   </div>
+  <p> 1.Annapurna base camp<br>
+      2.Mustang<br>
+      3.Bardiya<br>
+      4.Lumbini<br>
+      5.Everest<br>
+	  6.Chitwan<br>
+	  7.Patan dubar suare<br>
+  </p>
+  </header>
+  <script><!--check the size of the screen-->
+		function slideshow(){
+			var x=document.getElementById("check");
+			if(x.style.display === "none"){
+				x.style.display="block";
+			}
+			else{
+				x.style.display="none";
+			}
+
+		}
+   </script>
+  <footer>
+   <div class="footer_container">
+    <p class="copyright_text">&copy; copyright 2018 TRAVELLING EYES<br>
+    designed and developed by Travelling Eyes Team<br>Team Director:abc def<br> Contact Info: <a href="mailto:tilashmi63@gmail.com" style="color:orange">tilashmi63@gmail.com</a></p>
+    <ul class="social_media">
+      <li><a href="https://twitter.com/seenepal" target="_blank">Twitter.</a></li>
+      <li><a href="https://pinterest.com/seenepal" target="_blank">Pinterest.</a></li>
+      <li><a href="https://www.facebook.com/seenepal" target="_blank">Facebook.</a></li>
+      <li><a href="https://www.instagram.com/outnet" target="_blank">Instagram.</a></li>
+    </ul>
+  </div>
+  </footer>
+</body>
+</html>

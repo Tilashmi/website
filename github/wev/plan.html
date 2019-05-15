@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+	<title>Planning</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="plan.css" type="text/css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+		<nav>
+			<div class="bar clearfix">
+				<img src="eyes.svg" alt="logo of budhha eyes" class="logo">
+				<h2> Travelling eyes</h2>
+				<ul class="main-nav animated bounceInDown" id="check">
+					<li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">PLACES TO GO</a></li>
+                    <li><a href="todo.html">THINGS TO DO</a></li>
+                    <li><a href="form.html">LOGIN</a></li>
+	                <li><a href="plan.html">PLAN YOYR TRIP</a></li>
+	             </ul>
+	             <a href="#" class="icon"  onclick= "slideshow()"><i class="fa fa-bars"></i></a>
+			</div>
+		</nav>
+<br><br><br><br><br><br>
+<p class ="trip" style="font-size:40px; text-align:center;">PLAN YOUR TRIP NOW!<br>Pack Your Stuffs And Hop On</p>
+      <div class="container">
+      	<div class="box">
+      		<div class="ic">
+      			<i class="fa fa-plane" aria-hidden="true"></i></div>
+      			<div class="conten">
+      				<h3>Book flights</h3>
+      				<p>This is for booking flights from different air lines</p>
+      			</div>
+      	</div>
+      	<div class="box">
+      		<div class="ic">
+      			<i class="fa fa-map-marker" aria-hidden="true"></i></div>
+      			<div class="conten">
+      				<h3>Choose Location</h3>
+      				<p>Now you can choose location as per you want.</p>
+      			</div>
+      	</div>
+      	<div class="box">
+      		<div class="ic">
+      			<i class="fa fa-bed" aria-hidden="true"></i></div>
+      			<div class="conten">
+      				<h3>Bed And Breakfast</h3>
+      				<p>Book hotels at affordable prices and relax your wallets</p>
+      			</div>
+      	</div>
+      </div>
+</header>
+<script>
+	  function slideshow(){
+			var x=document.getElementById("check");
+			if(x.style.display === "none"){
+				x.style.display="block";
+			}
+			else{
+				x.style.display="none";
+			}
+		}
+</script>
+<footer>
+<div class="footer_container">
+    <p class="copyright_text">&copy; copyright 2018 TRAVELLING EYES<br>
+    designed and developed by Travelling Eyes Team<br>Team Director:abc def<br> Contact Info: <a href="mailto:tilashmi63@gmail.com" style="color:orange">tilashmi63@gmail.com</a></p>
+    <ul class="social_media">
+      <li><a href="https://twitter.com/seenepal" target="_blank">Twitter.</a></li>
+      <li><a href="https://pinterest.com/seenepal" target="_blank">Pinterest.</a></li>
+      <li><a href="https://www.facebook.com/seenepal" target="_blank">Facebook.</a></li>
+      <li><a href="https://www.instagram.com/outnet" target="_blank">Instagram.</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ <head>
+   <meta charset="utf-8">
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="form.css" type="text/css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="bar clearfix"><!--for responsive purpose-->
+				<img src="eyes.svg" alt="a logo of buddha eyes" class="logo">
+				<h2> Travelling eyes</h2>
+				<ul class="main-nav animated bounceInDown" id="check">
+					<li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">PLACES TO GO</a></li>
+                    <li><a href="todo.html">THINGS TO DO</a></li>
+                    <li><a href="form.html">LOGIN</a></li>
+	                <li><a href="plan.html">PLAN YOUR TRIP</a></li>
+	             </ul>
+	             <a href="#" class="icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+			</div>
+		</nav>
+
+	<div class="login">
+	 <form name="myForm" method="post" onsubmit="return validate()">
+		<h1 style="color: white">LogIn</h1><br><br>
+		<input type="text" name="username" placeholder="username">
+		<input type="password" name="pass" placeholder="password"><br><br>
+		<input type="submit" value="Login" ><br><br>
+		<!--for resert and forget password-->
+	    <div id ="contain">
+		  <a href="re.html" style="margin-right:0px;font-size:13px;
+		  font-family: Tahoma ,Geneva, sans-serif;">Reset password?</a>
+		  <a href="f.html" style="margin-right:0px;
+		  font-size:13px;
+		  font-family: Tahoma ,Geneva, sans-serif;">Forgot password</a>
+	    </div>
+	    <br><br>Don't have an account?<br><br><a href="sign.html">SignUp</a>
+     </form>
+  	</div>
+  </header>
+  <script><!--for form validation-->
+      function validate() {
+         if( document.myForm.username.value == "") {
+            alert( "Please provide your name!" );
+            document.myForm.username.focus() ;
+            return false;
+         }
+         if( document.myForm.pass.value == "") {
+            alert( "Please provide your Password!" );
+            document.myForm.pass.focus() ;
+            return false;
+         }
+		}
+  </script>
+  <script><!--responsive-->
+		function slideshow(){
+			var x=document.getElementById("check");
+			if(x.style.display === "none"){
+				x.style.display="block";
+			}
+			else{
+				x.style.display="none";
+			}
+
+		}
+	</script>
+
+  <footer>
+   <div class="footer_container">
+    <p class="copyright_text">&copy; copyright 2018 TRAVELLING EYES<br>
+    designed and developed by Travelling Eyes Team<br>Team Director:abc def<br> Contact Info: <a href="mailto:tilashmi63@gmail.com" style="color:orange">tilashmi63@gmail.com</a></p>
+     <ul class="social_media">
+      <li><a href="https://twitter.com/seenepal" target="_blank">Twitter.</a></li>
+      <li><a href="https://pinterest.com/seenepal" target="_blank">Pinterest.</a></li>
+      <li><a href="https://www.facebook.com/seenepal" target="_blank">Facebook.</a></li>
+      <li><a href="https://www.instagram.com/outnet" target="_blank">Instagram.</a></li>
+     </ul>
+   </div>
+  </footer>
+</body>
+</html>

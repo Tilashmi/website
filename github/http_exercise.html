@@ -1,0 +1,102 @@
+<!DOCTYPE  html>
+<html><head>
+<title> Some related questions Answers</title>
+<style>
+li{
+font-size:24px;
+font-weight:bold;
+
+}
+p{
+ font-size:21px;
+ font-family:Sans Serif;}
+hr{
+ size:3px;
+ }
+</style>
+</head>
+<body>
+<ol>
+<li> What is the Hypertext Transfer Protocol (HTTP)?<br><br></li>
+<p>Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documentslike HTML,
+ specially for communication between web browsers and web servers.</p>
+ <hr>
+<li>Why is HTTP called a stateless protocol?<br><br></li>
+<p>HTTP is a stateless protocol, meaning that the server does not keep any data (state) between two requests. Though often based
+ on a TCP/IP layer, it can be used on any reliable transport layer; that is, a protocol that doesn't lose messages silently, such as UDP.</p>
+ <hr>
+<li>Describe the three phases of establishing a session using client-server protocols such as HTTP.<br><br></li>
+<p>In client-server protocols, like HTTP, sessions consist of three phases:<br><br>
+
+The client establishes a TCP connection (or the appropriate connection if the transport layer is not TCP).<br>
+The client sends its request, and waits for the answer.<br>
+The server processes the request, sending back its answer, providing a status code and appropriate data.<br>
+As of HTTP/1.1, the connection is no longer closed after completing the third phase, and the client is 
+now granted a further request: this means the second and third phases can now be performed any number of times.</p>
+<hr>
+<li>Describe the parameters on a get and post request.<br><br></li><p>
+The HTTP GET method requests a representation of the specified resource. Requests using GET should only retrieve data.
+<br>
+1.Request has body	            :No<br>
+2.Successful response has body	:Yes<br>
+3.Safe	                        :Yes<br>
+4.Idempotent	                :Yes<br>
+5.Cacheable	                    :Yes<br>
+6.Allowed in HTML forms	        :Yes<br>
+</p>
+<p>
+When the POST request is sent via a method other than an HTML form — like via an XMLHttpRequest — the body can take any type. As described in the HTTP 1.1 specification, POST is designed to allow a uniform method to cover the following functions:
+
+Annotation of existing resources
+Posting a message to a bulletin board, newsgroup, mailing list, or similar group of articles;
+Adding a new user through a signup modal;
+Providing a block of data, such as the result of submitting a form, to a data-handling process;
+Extending a database through an append operation.<br>
+1.Request has body	            :Yes<br>
+2.Successful response has body	:Yes<br>
+3.Safe	                        :No<br>
+4.Idempotent	                :No<br>
+5.Cacheable	Only if freshness information is included<br>
+6.Allowed in HTML forms	        Yes
+</p>
+<hr>
+<li>What are the HTTP response status code and What do the HTTP status codes, 200, and 404 indicate?<br><br></li>
+<p>HTTP response status codes indicate whether a specific HTTP request has been successfully completed.<br>
+The HTTP 200 OK success status response code indicates that the request has succeeded.<br>
+The best known of them all, the 404 status code indicates that the requested resource was not <br>found at the URL given, and the server has no idea how long for. </p></li>
+<hr>
+<li> What are HTTP cookies? Give an example.<br><br></li>
+<p>An HTTP cookie (web cookie, browser cookie) is a small piece of data that a server sends to the user's web browser. The browser
+may store it and send it back with the next request to the same server. Typically, it's used to tell if two requests came from the
+same browser — keeping a user logged-in, for example. It remembers stateful<br> information for the stateless HTTP protocol.</p>
+<hr>
+<li> Why are cookies a security issue??<br><br></li>
+<p>Information should be stored in cookies with the understanding that all cookie values will be visible to and can be changed by the
+end-user. Depending on the application, it may be desirable to use an opaque identifier which is looked-up server-side or investigate
+alternative authentication/confidentiality mechanisms such as JSON Web Tokens.</p>
+<hr>
+<li> Describe session hijacking and XSS<br><br></li>
+<p>Cookies are often used in web application to identify a user and their authenticated session, so stealing a cookie can lead to
+hijacking the authenticated user's session. Common ways to steal cookies include Social Engineering or exploiting an XSS vulnerability
+in the application.</p>
+<hr>
+<li> Describe Cross-site request forgery(CSRF)<br><br></li>
+<p>Wikipedia mentions a good example for CSRF. In this situation, someone includes an image that isn’t really an image 
+(for example in an unfiltered chat or forum), instead it really is a request to your bank’s server to withdraw money</p>
+<hr>
+<li> What are Cross-site HTTP requests (CORS) and what requests use CORS?<br><br></li>
+<p>Cross-Origin Resource Sharing (CORS) is a mechanism that uses additional HTTP headers to tell a browser to let a web application
+running at one origin (domain) have permission to access selected resources from a server at a different origin. A web application executes a
+ cross-origin HTTP request when it requests a resource that has a different origin (domain, protocol, and port) than its own origin.<br><br>
+This cross-origin sharing standard is used to enable cross-site HTTP requests for:
+Invocations of the XMLHttpRequest or Fetch APIs in a cross-site manner, as discussed above.
+Web Fonts (for cross-domain font usage in @font-face within CSS), so that servers can deploy TrueType fonts that can only be cross-site loaded and used by web sites that are permitted to do so.
+WebGL textures.
+Images/video frames drawn to a canvas using drawImage().</p>
+</ol>
+</body>
+</html>
+
+
+
+
